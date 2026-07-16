@@ -1,18 +1,28 @@
 // Displays one team's score and controls
-function TeamPanel({ teamName, score, onAdd, onSubtract }) {
+function TeamPanel({
+  teamName,
+  score,
+  step,
+  onAdd,
+  onSubtract,
+}) {
+  const isWinner = score >= 10;
+
   return (
-    <div className="team-panel">
-      <h2>{teamName}</h2>
+    <div className={`team-panel ${isWinner ? "winner" : ""}`}>
+      <h2>
+        {teamName} {isWinner && "🎉"}
+      </h2>
 
       <h1>{score}</h1>
 
-      <button onClick={onAdd}>+1</button>
+      <button onClick={onAdd}>+{step}</button>
 
       <button
         onClick={onSubtract}
         disabled={score === 0}
       >
-        -1
+        -{step}
       </button>
     </div>
   );
