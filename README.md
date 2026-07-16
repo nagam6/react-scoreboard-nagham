@@ -1,16 +1,78 @@
-# React + Vite
+# React Live Scoreboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that keeps track of the score for two teams in a live game.
 
-Currently, two official plugins are available:
+This project was built as part of the **NewTech Coding Bootcamp** to practice React fundamentals, including `useState`, event handling, props, and component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Two independent team scores
+- Increase and decrease score
+- Score never goes below zero
+- Reset both scores
+- Disabled "-1" button when score is zero
+- Responsive layout
+- Built with reusable React components
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+
+---
+
+## Project Structure
+
+```text
+src/
+│── App.jsx
+│── App.css
+│── main.jsx
+│── index.css
+│
+├── components/
+│   ├── Scoreboard.jsx
+│   └── TeamPanel.jsx
+```
+
+---
+
+## Installation
+
+```bash
+npm install
+```
+
+## Run the project
+
+```bash
+npm run dev
+```
+
+## What I Learned
+
+- Managing state with `useState`
+- Passing data through props
+- Handling button click events
+- Updating state with functional updates
+- Building reusable React components
+- Conditional rendering with disabled buttons
+
+---
+
+## Screenshot
+
+![Live Scoreboard](/scoreboard.jpg)
+
+---
+
+## Author
+
+**Nagham Daban**
+
